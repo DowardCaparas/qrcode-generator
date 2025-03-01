@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",                // Use modern JavaScript for Node.js
+    "module": "CommonJS",              // Use CommonJS modules for Node.js
+    "moduleResolution": "node",        // Enable Node.js module resolution
+    "strict": true                     // Enable strict mode for type checking
+  },
+  "include": [
+    "server/**/*"  // Include all server files
+  ],
+  "exclude": [
+    "node_modules", "src"  // Exclude the frontend code (from `src`)
+  ]
+}

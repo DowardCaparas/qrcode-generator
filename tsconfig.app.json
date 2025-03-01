@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",               // Use modern JavaScript features
+    "module": "ESNext",               // Use ES Modules for better module resolution
+    "moduleResolution": "node",       // Enable Node.js-style module resolution
+    "jsx": "react-jsx",               // Use React 17 JSX Transform
+    "strict": true,                   // Enable strict mode for better type checking
+    "esModuleInterop": true,          // Allow default imports from CommonJS
+    "skipLibCheck": true,             // Skip checking of declaration files
+    "allowSyntheticDefaultImports": true,  // Allow default imports even from non-ESM modules
+    "resolveJsonModule": true,        // Allow importing JSON files as modules
+    "forceConsistentCasingInFileNames": true // Ensure consistent casing in imports
+  },
+  "include": [
+    "src/**/*"  // Include all the files in the `src` folder
+  ],
+  "exclude": [
+    "node_modules"  // Exclude `node_modules`
+  ]
+}
