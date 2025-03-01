@@ -1,14 +1,24 @@
 {
   "compilerOptions": {
-    "target": "ESNext",                // Use modern JavaScript for Node.js
-    "module": "CommonJS",              // Use CommonJS modules for Node.js
-    "moduleResolution": "node",        // Enable Node.js module resolution
-    "strict": true                     // Enable strict mode for type checking
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.node.tsbuildinfo",
+    "target": "ES2022",
+    "lib": ["ES2023"],
+    "module": "ESNext",
+    "skipLibCheck": true,
+
+    /* Bundler mode */
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "isolatedModules": true,
+    "moduleDetection": "force",
+    "noEmit": true,
+
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedSideEffectImports": true
   },
-  "include": [
-    "server/**/*"  // Include all server files
-  ],
-  "exclude": [
-    "node_modules", "src"  // Exclude the frontend code (from `src`)
-  ]
+  "include": ["vite.config.ts"]
 }
