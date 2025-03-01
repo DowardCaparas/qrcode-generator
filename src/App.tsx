@@ -80,7 +80,7 @@ const App: React.FC = () => {
     <>
       <main className="my-16">
       <h1 className="text-4xl font-bold text-center">QR Code Generator</h1>
-      <p className="text-center">You can download it as PNG ot JPG.</p>
+      <p className="text-center">You can download it as PNG or JPG.</p>
       <div className="flex flex-col gap-2 mx-auto md:w-[50%] mt-10 p-5">
         <label htmlFor="userInput">Enter your link to generate QR Code</label>
         <input
